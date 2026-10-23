@@ -46,10 +46,18 @@ async def log_request_latency(request: Request, call_next):
             duration_ms,
             status_code,
         )
+import os
+frontend_origin = os.getenv("FRONTEND_ORIGIN", "")
 
+allowed_origins = [
+    "http://localhost:5173",
+]
+
+if frontend_origin:
+    allowed_origins.append(frontend_origin.rstrip("/"))
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
