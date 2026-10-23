@@ -1,0 +1,98 @@
+# ==========================================
+# React / Node.js (npm)
+# ==========================================
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Production build artifacts
+build/
+dist/
+out/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js / Gatsby specific (if applicable)
+.next/
+.cache/
+
+
+# ==========================================
+# Python
+# ==========================================
+# Virtual environments (Never commit these!)
+venv/
+.venv/
+env/
+.env/
+ENV/
+pyenv/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging artifacts
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing / coverage
+htmlcov/
+.toml
+.cache
+.pytest_cache/
+.coverage
+.coverage.*
+.hypothesis/
+.nosexy
+
+
+# ==========================================
+# Environment Variables & Secrets (CRITICAL)
+# ==========================================
+# Never commit your private API keys or database passwords!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+
+# ==========================================
+# Operating System & Editors
+# ==========================================
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDEs and Text Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
