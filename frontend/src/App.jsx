@@ -604,7 +604,7 @@ export default function App() {
     <main className="app-shell aura-redesign">
       <header className="topbar aura-topbar">
         <a className="brand aura-brand" href="#" aria-label="Aura Skincare home">
-          <span className={`aura-mark aura-mark-${state.toLowerCase()}`} aria-hidden="true">
+          <span className={`aura-mark aura-mark-${state.toLowerCase()}`} aria-hidden="false">
             <svg viewBox="0 0 64 64" role="img" aria-label="">
               <path d="M32 7 C38 18 39 22 32 29 C25 22 26 18 32 7Z" />
               <path d="M57 32 C46 38 42 39 35 32 C42 25 46 26 57 32Z" />
@@ -629,7 +629,7 @@ export default function App() {
             <span className="orb-halo orb-halo-one" />
             <span className="orb-halo orb-halo-two" />
             <span className="orb-core">
-              <svg viewBox="0 0 64 64" aria-hidden="true">
+              <svg viewBox="0 0 64 64" aria-hidden="false">
                 <path d="M32 9 C38 19 39 23 32 29 C25 23 26 19 32 9Z" />
                 <path d="M55 32 C45 38 41 39 35 32 C41 25 45 26 55 32Z" />
                 <path d="M32 55 C26 45 25 41 32 35 C39 41 38 45 32 55Z" />
@@ -642,7 +642,7 @@ export default function App() {
             <span className={`state-pill state-pill-${state.toLowerCase()}`}>
               <span className="state-dot" /> {state === "Ready" ? "Ready to help" : state === "Listening" ? "Listening to you" : state === "Thinking" ? "Thinking through it" : state === "Speaking" ? "Aria is speaking" : state}
             </span>
-            <h2>Aria</h2>
+            <h2 className="assistant-name">Aria</h2>
             <p>{state === "Listening" ? "Go ahead — I'm listening." : state === "Thinking" ? "Let me find the right answer." : state === "Speaking" ? "Here's what I found for you." : "Friendly support, whenever you need it."}</p>
             <div className="voice-mode-row">
               <label htmlFor="voice-mode">Voice language</label>

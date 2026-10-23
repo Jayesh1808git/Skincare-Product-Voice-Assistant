@@ -125,6 +125,12 @@ button:disabled {
   color: #56775d;
   font-size: 34px;
 }
+.assistant-name {
+  color: #2f4638 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  font-weight: 600;
+}
 
 .call-card h2 {
   margin: 14px 0 4px;
